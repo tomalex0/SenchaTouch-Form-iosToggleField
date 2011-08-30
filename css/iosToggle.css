@@ -1,0 +1,73 @@
+.x-toggle-thumb-iosthumb{
+    position:relative;
+    margin:0.48em 0 0 0;
+    text-align:center;
+    font-size: 0.9em;
+    font-weight :bold;
+}
+
+.x-iostoggle-on .x-toggle-thumb-iosthumb{
+    color:white;
+    text-shadow:#062547 0 -1px 0;
+}
+
+.x-iostoggle-off .x-toggle-thumb-iosthumb{
+    color :  #666;
+    text-shadow:#FFFFFF 0 1px 0;
+}
+
+.x-field-toggle .x-slider.x-iostoggle-off, .x-field-toggle .x-slider.x-iostoggle-on{
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: #777 1px solid;
+    position: relative;
+    height: 32px;
+    /*width : 95%;*/
+}
+
+
+.x-field-toggle .x-slider.x-iostoggle-off, .x-field-toggle .x-slider.x-iostoggle-on{
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0.5, #EBEBEB),color-stop(.8, #D6D6D6), color-stop(1,#A2A2A2));
+    border:#777 1px solid;
+   -webkit-box-shadow:#CCC 0 0 2px;
+    margin: 0.6em;
+}
+
+.x-iostoggle-off .x-thumb::before, .x-iostoggle-on .x-thumb::before {
+    content: "";
+    position: absolute;
+    min-width:2.2em;
+    width:100%;
+    height: 1.650em;
+    top: 0em !important;
+    left: 0em !important;
+    -webkit-border-radius: 0.925em;
+    border-radius:3px;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+   
+}
+
+.x-iostoggle-off .x-thumb, .x-iostoggle-on .x-thumb{
+    width:50%;
+}
+.x-iostoggle-off .x-thumb::before {
+    border:1px solid #E5E5E5;
+    background-color: white;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A1A1A1), to(white));
+    background-image: linear-gradient(white,#A1A1A1 2%,#white);
+    -webkit-box-shadow:#222 0 0 3px
+}
+
+.x-iostoggle-on .x-thumb::before {
+    border:1px solid #14539C;
+    background-color: #14539C;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#14539C), to(#3095C7));
+    background-image: linear-gradient(white,#14539C 2%,#3095C7);
+    -webkit-box-shadow:#05203F 0 0 3px
+}
+.x-ios-slider.x-slider{
+    margin:0em;
+}
